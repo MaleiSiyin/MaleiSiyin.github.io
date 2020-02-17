@@ -588,6 +588,7 @@ $(function () {
 </div>
 
 <script src="/libs/dplayer/DPlayer.min.js"></script>
+ <div id="dplayer"></div>
 <script>
     $(function () {
         new DPlayer({
@@ -599,15 +600,15 @@ $(function () {
             preload: 'auto',
             volume: Number('0.7'),
             video: {
-                type: 'customHls',
                 url: 'https://nhkw-zh-hlscomp.akamaized.net/8thz5iufork8wjip/playlist.m3u8',
+                type: 'customHls',
                 pic: '',
+                thumbnails: ''
                 customType: {
                     customHls: function(video, player) {
                         const hls = new Hls();
                         hls.loadSource(video.src);
                         hls.attachMedia(video);
-                thumbnails: ''
             }
         });
     });
