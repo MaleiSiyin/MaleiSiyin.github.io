@@ -599,8 +599,14 @@ $(function () {
             preload: 'auto',
             volume: Number('0.7'),
             video: {
+                type: 'customHls',
                 url: 'https://nhkw-zh-hlscomp.akamaized.net/8thz5iufork8wjip/playlist.m3u8',
                 pic: '',
+                customType: {
+                    customHls: function(video, player) {
+                        const hls = new Hls();
+                        hls.loadSource(video.src);
+                        hls.attachMedia(video);
                 thumbnails: ''
             }
         });
