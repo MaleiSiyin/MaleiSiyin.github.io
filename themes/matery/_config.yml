@@ -91,13 +91,14 @@ music:
 video:
   enable: true
   showTitle: true
-  title: 精彩视频
-  url: https://ww2.dmit.ml/程响 - 新娘不是我.mkv # 必填
+  title: 视频fans
+  url: https://ww2.dmit.ml/郭少杰 - 一曲红尘.mkv # 必填
+  url1: https://nhkw-zh-hlscomp.akamaized.net/8thz5iufork8wjip/playlist.m3u8 # 必填
   pic:
   thumbnails:
-  height: # 如：400
-  autoplay: false # 是否自动播放
-  theme: '#42b983'
+  height: 500 # 如：400
+  autoplay: true # 是否自动播放
+  theme: '#b7daff'
   loop: false # 是否循环播放
   preload: 'auto' # 预加载，可选值: 'none', 'metadata', 'auto'
   volume: 0.7
@@ -456,7 +457,7 @@ tidio:
 
 #背景canvas-nest
 canvas_nest:
-  enable: true
+  enable: false
   color: 0,0,255 # 线条颜色, 默认: '0,0,0' ；三个数字分别为(R,G,B)，注意用,分割
   pointColor: 0,0,255 # 交点颜色, 默认: '0,0,0' ；三个数字分别为(R,G,B)，注意用,分割
   opacity: 0.7 # 线条透明度（0~1）, 默认: 0.5
@@ -469,11 +470,11 @@ ribbon:
   size: 150 # 彩带大小, 默认: 90.
   alpha: 0.6 # 彩带透明度 (0 ~ 1), 默认: 0.6.
   zIndex: -1 # 背景的z-index属性，css属性用于控制所在层的位置, 默认: -1.
-  clickChange: true  # 设置是否每次点击都更换彩带.
+  clickChange: false  # 设置是否每次点击都更换彩带.
 
 # 背景动态彩带.
 ribbon_dynamic:
-  enable: true
+  enable: false
 
 # sharejs文章分享模块.
 # 支持顺序，可选项目为twitter, facebook, google, qq, qzone, wechat, weibo, douban, linkedin.
